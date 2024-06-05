@@ -1,7 +1,9 @@
 import MenuItems from "./menuItems"
+import '../styles/sidebar.css'
+
+
 const SidebarComponent = () => {
-    return <div className="flex flex-column-direction">
-        <p>sidebar component</p>
+    return <div className="sidebar-container">
         <MenuItems />
     </div>
 }
