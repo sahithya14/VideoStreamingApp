@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-row-direction{
+    flex-direction: row;
+}
+
+.flex-column-direction{
+    flex-direction: column;
+}
+
