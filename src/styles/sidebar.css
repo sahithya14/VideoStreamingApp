@@ -5,7 +5,7 @@
    /* z-index: 99; */
    position: absolute;
    left:-250px;
-   transition:left 1s ease-in-out 0s;
+   transition:left 0.5s ease-in-out 0s;
    top: 2rem;
    min-width:fit-content
 }
@@ -13,4 +13,8 @@
 .sidebar-container.open{
    left:0px;
    margin-left: -8px;
+}
+
+.body-container{
+   position:relative
 }

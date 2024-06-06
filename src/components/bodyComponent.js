@@ -1,6 +1,6 @@
 import SidebarComponent from "./sidebarComponent"
 import MainContainer from "./mainContainer"
-import "../styles/common.css"
+import "../styles/sidebar.css"
 
 
 const BodyComponent = () => {
