@@ -1,6 +1,16 @@
 .sidebar-container{
-   background-color: aqua;
-   width:15%;
+   background-color:white;
+   width:20%;
    height:100%;
-   z-index: 1;
+   /* z-index: 99; */
+   position: absolute;
+   left:-250px;
+   transition:left 1s ease-in-out 0s;
+   top: 2rem;
+   min-width:fit-content
+}
+
+.sidebar-container.open{
+   left:0px;
+   margin-left: -8px;
 }

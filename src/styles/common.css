@@ -1,6 +1,5 @@
 .flex{
     display: flex;
-    align-items: center;
 }
 
 .flex-row-direction{
@@ -10,4 +9,15 @@
 .flex-column-direction{
     flex-direction: column;
 }
+
+ul{
+    padding-left: 5px;
+}
+li{
+    list-style-type:none;    
+ }
+
+ .body-container{
+    position:relative
+ }
 
