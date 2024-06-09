@@ -1,28 +1,16 @@
-import {GET_YOUTUBE_VIDEOS_API} from '../constants/apiConstants.js'
-import videoServices from '../services/videoServices.js'
-import { useEffect,useState } from 'react'
-import { useSelector } from 'react-redux'
-import VideoCard from './videoCardComponent.js'
-import '../styles/card.css'
 
-const MainContainer = ()=>{
+import ButtonList from './buttonList.js'
+import VideoContainer from './video/videoContainer.js'
+import { Outlet } from 'react-router-dom'
+import '../styles/common.css'
 
-    const [videosList, setVideosList] = useState([])
 
-    useEffect(()=>{
-        videoServices.getVideoList(GET_YOUTUBE_VIDEOS_API).then((data)=>{
-            console.log(data)
-            setVideosList(data?.items)
-        }).catch(console.error())
-      
-    },[])
-
-    if(videosList.length===0) return null
-    return <div className={`videos-container`}>
-        {videosList.map((videoInfo)=>{
-             return<VideoCard videoInfo ={videoInfo}/>
-        })}  
-        </div>
+const MainContainer = () => {
+    return <div className = "flex flex-column-direction">
+        <ButtonList />
+        <Outlet/>{/* It can be replace by <VideoContainer/> or Watch Component based on path configured in app.js*/}
+       
+    </div>
 }
 
 export default MainContainer

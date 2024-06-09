@@ -5,12 +5,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    a{
+        text-decoration: none;/*styles for link*/
+        color: black
+    }
 }
 
 .dim{
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 .video-card-cont{
     width:14rem;

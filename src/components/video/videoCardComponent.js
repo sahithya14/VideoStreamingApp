@@ -1,4 +1,5 @@
-import "../styles/card.css"
+import "../../styles/card.css"
+
 const VideoCard = ({videoInfo}) => {
     const {snippet, statistics } = videoInfo
     console.log(videoInfo)

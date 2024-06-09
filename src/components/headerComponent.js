@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { useDispatch } from 'react-redux';
-import {toggleSideBar} from '../store/sidebarSlice.js'
+import {toggleSideBar} from '../store/sidebar-slice.js'
 
 const Header = () => {
     const dispatch = useDispatch()
