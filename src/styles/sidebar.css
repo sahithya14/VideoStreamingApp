@@ -6,7 +6,6 @@
    position: absolute;
    left:-250px;
    transition:left 0.5s ease-in-out 0s;
-   top: 2rem;
    min-width:fit-content
 }
 
@@ -16,5 +15,6 @@
 }
 
 .body-container{
-   position:relative
+   position:absolute;
+   margin-top: 50px;
 }

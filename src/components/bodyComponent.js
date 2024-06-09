@@ -5,7 +5,7 @@ import "../styles/sidebar.css"
 
 const BodyComponent = () => {
     return <div className = "flex flex-row-direction body-container">
-        {<SidebarComponent/>}
+        <SidebarComponent/>
         <MainContainer/>
     </div>
 }
